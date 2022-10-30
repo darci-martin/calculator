@@ -1,24 +1,13 @@
-import logo from './logo.svg';
+import {Calculator} from "./components/Calculator";
 import './App.css';
 
 function App() {
+
+  //Key press on the document is captured. 
+  //App component, can capture the keydowns and then do something with them. Then update the State with whatever is in the keystroke.
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+        <Calculator />
   );
 }
 
